@@ -3,7 +3,7 @@ import {View} from 'react-native';
 import style from './style';
 
 const container = ({children}) =>   (
-<View styles={style.comtainer}>
+<View styles={style.container}>
 {children}
 
  </View>   
