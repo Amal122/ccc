@@ -1,9 +1,9 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
 export default EStyleSheet.create({
-container:{
+Container:{
     flex: 1,
-    alignItem:'center',
+    alignItems:'center',
     justifyContent:'center',
-    backgroundColor:'$primaryBlue',
+    backgroundColor:'red',
 },
 });

@@ -1,4 +1,4 @@
-import container from './comtainer';
+import Container from './Container';
 import style from './style';
 
-export {container,style};
+export {Container,style};
