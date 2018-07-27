@@ -1,13 +1,13 @@
 import React from 'react';
 import {View,Image,Text} from 'react-native';
 
-const Logo = () =>(
-<View>
-    <Image source ={require ('./images/a.jpeg')}>
-    
-     </Image>   
-<Text>Currency Converter</Text>
- </View>   
+const Abc=() => (
+    <View>
+     <Text>Currency</Text>   
+
+     </View>   
+
 
 );
-export default Logo;
+
+export default Abc;

@@ -15,13 +15,7 @@
     "ios": "react-native-scripts ios",
     "test": "jest",
     "lint": "eslint app/",
-    "lint:fix": "eslint app/ --fix",
-    "prettier":"prettier --write '*.js'",
-    "format-code":"npm run prettier && npm run lint:fix",
-    "precommit":"lint-staged"
-  },
-  "lint staged":{"*.js":["npm run format-code","git add"]
-
+    "lint:fix": "eslint app/ --fix"
   },
   "jest": {
     "preset": "jest-expo"
