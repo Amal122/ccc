@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import {StatusBar} from 'react-native';
-import Container from '../components/Container';
+import Container from '../components/Container/Container';
 import Abc from '../components/Logo';
-import Input from '../components/TextInput'
+import Input from '../components/TextInput/Inputwithbutton'
 
 
 const TempBase = "$";
@@ -17,6 +17,9 @@ console.log('press Base');
 handlePressQuateCurrency = () =>{
     console.log('press Quate');
     };
+handleTextChange =(text) =>{
+    console.log('change text',text);
+}    
 
 render(){
 return(
@@ -25,17 +28,20 @@ return(
     <Container> 
         <StatusBar translucent={false} barStyle="light-content" />
         <Abc/> 
-        <Input
+        <Input 
         buttonText={TempBase}
         onPress={this.handlePressBaseCurrency}
-        
-        />
+        defaultValue={BasePrice}
+        keyboardType="numeric"
+        onchangeText={this.handleTextChange}
+        /> 
 
-        <Input
+         <Input
          buttonText={TempQuate}
          onPress={this.handlePressQuateCurrency}
+         value={QuatePrice}
          editable={false}
-/>
+/> 
         </Container>
 );
 }

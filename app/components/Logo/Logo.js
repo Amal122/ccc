@@ -3,7 +3,7 @@ import {View,Image,Text} from 'react-native';
 
 const Abc=() => (
     <View>
-     <Text>Currency</Text>   
+     <Text>Currency Converter</Text>   
 
      </View>   
 
