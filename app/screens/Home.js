@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {StatusBar,KeyboardAvoidingView} from 'react-native';
+import {StatusBar,KeyboardAvoidingView,View} from 'react-native';
 import Container from '../components/Container/Container';
 import Abc from '../components/Logo';
 import Input from '../components/TextInput/Inputwithbutton';
@@ -36,7 +36,8 @@ handleSwapCurrency = ()=>{
 }; 
 handleOptionsPress=()=> {
     console.log(' Option press')
-}  
+    this.props.navigation.navigate('Options');
+};  
 
 render(){
 return(
@@ -49,7 +50,9 @@ return(
         <Abc/> 
         <Input 
         buttonText={TempBase}
+        
         onPress={this.handlePressBaseCurrency}
+        //placeholder="Type here to convert"
         defaultValue={BasePrice}
         keyboardType="numeric"
         onchangeText={this.handleTextChange}

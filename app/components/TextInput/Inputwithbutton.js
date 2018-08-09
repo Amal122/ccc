@@ -2,29 +2,32 @@ import React from 'react';
 import propTypes from 'prop-types';
 import {View,Text,TextInput,TouchableHighlight} from 'react-native';
 import color from 'color';
-import styles from './style';
+import style from './style';
 
 const Input =(props) => {
     //const underlayColor = color(styles.$buttonBackgroundColorBase).darken(
         //styles.$buttonBackgroundColorModifier,
 //);
     
-      const containerStyles = [styles.container];
+      const containerStyles = [style.container];
       if (props.editable === false) {
-        containerStyles.push(styles.containerDisabled);
+        containerStyles.push(style.containerDisabled);
       }
     
       return (
         <View style={containerStyles}>
           <TouchableHighlight
             onPress={props.onPress}
-            style={styles.buttonContainer}
+            style={style.buttonContainer}
            // underlayColor={underlayColor}
           >
-            <Text style={styles.buttonText}>{props.buttonText}</Text>
+            <Text style={style.buttonText}>{props.buttonText}</Text>
           </TouchableHighlight>
-          <View style={styles.separator} />
-          <TextInput style={styles.input} underlineColorAndroid="transparent" {...props} />
+          <View style={style.separator} />
+          <TextInput 
+          style={style.input}
+           placeholder="Type here to convert!"
+           underlineColorAndroid="transparent" {...props} />
         </View>
       );
     };

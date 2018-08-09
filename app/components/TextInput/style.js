@@ -36,6 +36,7 @@ color:'blue',
 },
 input:{
     height: INPUT_HEIGHT,
+    
     flex:1,
     fontSize:18,
      paddingHorizontal:8,

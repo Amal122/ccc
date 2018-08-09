@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {ScrollView,StatusBar,Platform} from 'react-native';
+import {ScrollView,StatusBar,Platform,Linking} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 import ListItem from '../components/List/listItem';
 import Separator from '../components/List/separator';
@@ -12,9 +12,11 @@ class Options extends Component{
 
 handleThemesPress =()=>{
     console.log('press theme');
+    this.props.navigation.navigate('Themes');
 };
 handleSitePress =() =>{
     console.log('press site');
+    Linking.openURL('http://fixer.io').catch(() => alert('An error occured.'));
 };
 
 render() {

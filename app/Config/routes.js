@@ -10,13 +10,20 @@ Home:{
     screen:Home,
     navigationOptions:{
         header:() => null,
+        headerTitle: 'Home',
 },
 },
 Options:{
     screen:Options,
+    navigationOptions: {
+        headerTitle: 'Options',
+      },
 },
 Themes:{
     screen:Themes,
+    navigationOptions: {
+        headerTitle: 'Options',
+      },
 },
 
 });
@@ -25,7 +32,7 @@ export default StackNavigator({
 Home:{
 screen:Home,
 navigationOptions:{
-    header:() => null,
+    header: () => null,
 },
 },
 CurrencyList:{
